@@ -228,7 +228,7 @@ port : 19132
 
 <button onclick="copyIP()">
 
-"🎮کپی کردن ایپی "; 
+🎮 کپی کردن ایپی
 
 </button>
 
@@ -274,16 +274,14 @@ Phantom
 <div class="rank">
 
 <h3 style="color:#404040">
-spanser
+Aura
 </h3>
 
 <p>
-رنک اسپانسر با قابلیت های نسبتا خوب
+  پرواز fly , شنل cape , سابز size , کیت kit , دریافت 1 میل پول سرور , دریافت 100 عدد بیمه
 </p>
 
 </div>
-
-
 
 
 <div class="rank">

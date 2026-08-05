@@ -197,12 +197,12 @@ color:#aaa;
 
 
 <p>
-به سرور ماینکرفت Fire ball land خوش آمدید.
+به سرور ماینکرف بدراک فایر بال لند خوش امدید
 </p>
 
 
 <p>
-ایونت های جذاب، رنک های متنوع و محیط دوستانه
+ایونت های جذاب رنک های متنوع و محیط دوستانه
 </p>
 
 
@@ -228,7 +228,7 @@ port : 19132
 
 <button onclick="copyIP()">
 
-🎮 Join Now
+"🎮کپی کردن ایپی "; 
 
 </button>
 
@@ -245,7 +245,7 @@ port : 19132
 <div class="ranks">
 
 
-<h2>🏆 رنک های Fire ball land</h2>
+<h2>🏆 رنک های فروش </h2>
 
 
 <div class="rank-box">
@@ -254,12 +254,16 @@ port : 19132
 
 <div class="rank">
 
-<h3 style="color:red">
-spanser+
+<h3 style="color:#ff0000">
+Phantom
 </h3>
 
 <p>
-رنک اسپانسر پلاس با قابلیت های فوق العاده
+  پرواز fly
+  شنل cape
+  کیت kit
+  250کا پول سرور
+  20 عدد بیمه
 </p>
 
 </div>
@@ -269,7 +273,7 @@ spanser+
 
 <div class="rank">
 
-<h3 style="color:orange">
+<h3 style="color:#404040">
 spanser
 </h3>
 

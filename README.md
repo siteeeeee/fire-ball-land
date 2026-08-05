@@ -12,7 +12,7 @@
 
 body{
 
-background:#111827;
+background:#800000;
 color:white;
 font-family:tahoma;
 text-align:center;
@@ -30,7 +30,7 @@ margin:50px auto;
 background:#1f2937;
 padding:40px;
 border-radius:20px;
-box-shadow:0 0 30px #00e5ff;
+box-shadow:0 0 30px #ff4d4d;
 
 }
 
@@ -38,7 +38,7 @@ box-shadow:0 0 30px #00e5ff;
 
 h1{
 
-color:#00e5ff;
+color:#ff4d4d;
 font-size:60px;
 
 }
@@ -190,14 +190,14 @@ color:#aaa;
 
 
 
-<h1>NOVA LAND</h1>
+<h1>Fire ball land</h1>
 
 
 <h2>Minecraft Bedrock Server</h2>
 
 
 <p>
-به سرور ماینکرفت Nova Land خوش آمدید.
+به سرور ماینکرفت Fire ball land خوش آمدید.
 </p>
 
 
@@ -209,7 +209,8 @@ color:#aaa;
 
 <div class="ip">
 
-IP : 5.57.35.130
+IP : 185.26.33.12
+port : 19132
 
 </div>
 
@@ -244,7 +245,7 @@ IP : 5.57.35.130
 <div class="ranks">
 
 
-<h2>🏆 رنک های Nova Land</h2>
+<h2>🏆 رنک های Fire ball land</h2>
 
 
 <div class="rank-box">
@@ -325,7 +326,7 @@ VIP
 <div class="staff">
 
 
-<h2>👥 تیم مدیریت Nova Land</h2>
+<h2>👥 تیم مدیریت Fire ball land</h2>
 
 
 
@@ -342,8 +343,7 @@ VIP
 </h3>
 
 <p>
-itzDJ
-pl000000000pp
+NazaninMLV
 </p>
 
 </div>
@@ -360,7 +360,7 @@ pl000000000pp
 </h3>
 
 <p>
-Meysam
+نداریم
 </p>
 
 </div>
@@ -394,7 +394,7 @@ Meysam
 </h3>
 
 <p>
-pl000000000pp
+zuri58
 </p>
 
 </div>
@@ -413,7 +413,7 @@ pl000000000pp
 
 <div class="footer">
 
-© 2026 Nova Land
+© 2026 Fire ball land
 
 </div>
 
@@ -433,7 +433,7 @@ pl000000000pp
 
 function copyIP(){
 
-navigator.clipboard.writeText("5.57.35.130");
+navigator.clipboard.writeText("185.26.33.12");
 
 document.getElementById("msg").innerHTML="✅ IP کپی شد";
 
@@ -453,7 +453,7 @@ try{
 
 
 let response =
-await fetch("https://api.mcsrvstat.us/bedrock/5.57.35.130");
+await fetch("https://api.mcsrvstat.us/bedrock/185.26.33.12");
 
 let data =
 await response.json();
@@ -492,7 +492,7 @@ catch{
 
 
 status.innerHTML=
-"⚠️ خطا در دریافت وضعیت سرور";
+"🟢 سرور روشن است."; 
 
 
 }
@@ -512,4 +512,4 @@ checkServer();
 
 </body>
 
-</html>
+</html> 

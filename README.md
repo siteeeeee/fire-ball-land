@@ -262,7 +262,7 @@ Phantom
   پرواز fly
   شنل cape
   کیت kit
-  250کا پول سرور
+  250کا پول سرور      
   20 عدد بیمه
 </p>
 
@@ -348,6 +348,8 @@ VIP
 
 <p>
 NazaninMLV
+
+Shadow
 </p>
 
 </div>
@@ -359,34 +361,15 @@ NazaninMLV
 
 <h3 style="color:orange">
 
-🛡 co-owmer
+🛡 Co-Owner
 
 </h3>
 
 <p>
-نداریم
+itz mohammad
 </p>
 
 </div>
-
-
-
-
-<div class="person">
-
-<h3 style="color:#00ff88">
-
-🧰 Maneger
-
-</h3>
-
-<p>
-نداریم
-</p>
-
-</div>
-
-
 
 
 <div class="person">

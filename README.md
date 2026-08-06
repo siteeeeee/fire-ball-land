@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Fire Ball Land | Minecraft Server</title>
+<title>Fire Ball Land | Minecraft bedrock Server</title>
 
 <style>
  

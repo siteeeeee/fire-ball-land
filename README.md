@@ -1,4 +1,4 @@
-<html lang="fa">
+<html lang="fa" dir="rtl">
 
 <head>
 
@@ -7,494 +7,370 @@
 
 <title>Nova Land</title>
 
-
 <style>
 
+*{
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
 body{
-
-background:#800000;
-color:white;
-font-family:tahoma;
-text-align:center;
 margin:0;
-
+font-family:tahoma;
+background:#111827;
+color:white;
+transition:.4s;
 }
 
 
-
-.box{
-
-width:85%;
-max-width:900px;
-margin:50px auto;
-background:#1f2937;
-padding:40px;
-border-radius:20px;
-box-shadow:0 0 30px #ff4d4d;
-
+header{
+background:#0f172a;
+padding:20px;
+position:sticky;
+top:0;
+z-index:100;
 }
 
 
-
-h1{
-
-color:#ff4d4d;
-font-size:60px;
-
+nav{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
 }
 
 
-
-h2{
-
-color:#00ff88;
-
+nav a{
+color:white;
+text-decoration:none;
+font-size:18px;
 }
 
 
+nav a:hover{
+color:#38bdf8;
+}
 
-p{
 
+.hero{
+text-align:center;
+padding:100px 20px;
+background:linear-gradient(135deg,#ff6666,#ff0000);
+}
+
+
+.hero h1{
+font-size:55px;
+animation:fade 2s;
+}
+
+
+.hero p{
 font-size:22px;
-line-height:40px;
-
 }
 
 
-
-.ip{
-
-color:#00ff88;
-font-size:30px;
-margin-top:30px;
-
+.btn{
+display:inline-block;
+background:white;
+color:#111;
+padding:15px 35px;
+border-radius:30px;
+text-decoration:none;
+margin-top:20px;
 }
 
 
+section{
+padding:60px 10%;
+}
 
-#status{
 
-margin-top:25px;
+.title{
+text-align:center;
+font-size:35px;
+margin-bottom:40px;
+}
+
+
+.cards{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+
+.card{
+background:#1f2937;
+padding:30px;
+width:280px;
+border-radius:20px;
+text-align:center;
+transition:.4s;
+}
+
+
+.card:hover{
+transform:translateY(-10px);
+background:#374151;
+}
+
+
+.gallery{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+
+.gallery div{
+width:200px;
+height:150px;
+background:#334155;
+border-radius:15px;
+display:flex;
+align-items:center;
+justify-content:center;
 font-size:25px;
-
 }
 
+
+.contact{
+text-align:center;
+}
 
 
 button{
-
-margin-top:30px;
-padding:15px 40px;
-font-size:22px;
-background:#00bfff;
-color:white;
+padding:12px 25px;
 border:none;
-border-radius:12px;
+border-radius:20px;
 cursor:pointer;
+}
+
+
+footer{
+background:#020617;
+text-align:center;
+padding:25px;
+}
+
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(-30px);
+}
+
+to{
+opacity:1;
+}
 
 }
 
 
-
-button:hover{
-
-background:#008ecc;
-
+.light{
+background:#f1f5f9;
+color:#111;
 }
 
 
-
-/* رنک ها */
-
-.ranks{
-
-margin-top:60px;
-
+.light header{
+background:white;
 }
 
 
-
-.rank-box{
-
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-
-}
-
-
-
-.rank{
-
-background:#111827;
-width:180px;
-padding:20px;
-border-radius:15px;
-
-}
-
-
-
-/* تیم مدیریت */
-
-.staff{
-
-margin-top:60px;
-
-}
-
-
-
-.staff-box{
-
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-
-}
-
-
-
-.person{
-
-background:#111827;
-width:200px;
-padding:20px;
-border-radius:15px;
-
-}
-
-
-
-.footer{
-
-margin-top:50px;
-color:#aaa;
-
+.light .card{
+background:white;
+color:#111;
 }
 
 
 </style>
 
-
 </head>
-
 
 
 <body>
 
 
-<div class="box">
+<header>
+
+<nav>
+
+<a href="#home">🏠 خانه</a>
+
+<a href="#services">استف</a>
+
+<a href="#about">👤 درباره ما</a>
+
+<a href="#gallery">رنک فروشی</a>
+
+<a href="#support">🛠 پشتیبانی</a>
+
+<button onclick="dark()">🌙</button>
+
+</nav>
+
+</header>
 
 
+<section class="hero" id="home">
 
 <h1>Fire ball land</h1>
 
-
-<h2>Minecraft Bedrock Server</h2>
-
-
 <p>
-به سرور ماینکرف بدراک فایر بال لند خوش امدید
+به دنیای حرفه ای فایر بال لند خوش آمدید.
 </p>
 
+<a class="btn" href="#services">
+ip : 185.26.33.12
+</a>
 
-<p>
-ایونت های جذاب رنک های متنوع و محیط دوستانه
-</p>
+</section>
 
 
+<section id="services">
 
-<div class="ip">
+<h2 class="title">
+staff استف
+</h2>
 
-IP : 185.26.33.12
-port : 19132
 
-</div>
+<div class="cards">
 
 
-
-
-<div id="status">
-
-⏳ در حال بررسی وضعیت سرور...
-
-</div>
-
-
-
-
-<button onclick="copyIP()">
-
-🎮 کپی کردن ایپی
-
-</button>
-
-
-
-<p id="msg"></p>
-
-
-
-
-<!-- رنک ها -->
-
-
-<div class="ranks">
-
-
-<h2>🏆 رنک های فروش </h2>
-
-
-<div class="rank-box">
-
-
-
-<div class="rank">
-
-<h3 style="color:#ff0000">
-Phantom
-</h3>
-
-<p>
-  پرواز fly
-  شنل cape
-  کیت kit
-  250کا پول سرور      
-  20 عدد بیمه
-</p>
-
-</div>
-
-
-
-
-<div class="rank">
-
-<h3 style="color:#404040">
-Aura
-</h3>
-
-<p>
-  پرواز fly , شنل cape , سابز size , کیت kit , دریافت 1 میل پول سرور , دریافت 100 عدد بیمه
-</p>
-
-</div>
-
-
-<div class="rank">
-
-<h3 style="color:#00e5ff">
-LEGEND
-</h3>
-
-<p>
-رنک ویژه
-</p>
-
-</div>
-
-
-
-
-<div class="rank">
-
-<h3 style="color:#00ff88">
-VIP
-</h3>
-
-<p>
-امکانات ویژه
-</p>
-
-</div>
-
-
-
-</div>
-
-</div>
-
-
-
-
-
-
-<!-- تیم مدیریت -->
-
-
-<div class="staff">
-
-
-<h2>👥 تیم مدیریت Fire ball land</h2>
-
-
-
-<div class="staff-box">
-
-
-
-<div class="person">
-
-<h3 style="color:red">
-
-👑 OWNER
-
-</h3>
-
+<div class="card">
+<h2>Owner-اونر</h2>
 <p>
 NazaninMLV
-
 Shadow
 </p>
-
 </div>
 
 
-
-
-<div class="person">
-
-<h3 style="color:orange">
-
-🛡 Co-Owner
-
-</h3>
-
+<div class="card">
+<h2>Co-Owner-کو اونر</h2>
 <p>
 itz mohammad
 </p>
-
 </div>
 
 
-<div class="person">
-
-<h3 style="color:#00e5ff">
-
-⭐ dev
-
-</h3>
-
+<div class="card">
+<h2>Dev-دولپر</h2>
 <p>
 zuri58
 </p>
-
-</div>
-
-
-
 </div>
 
 
 </div>
 
+</section>
+
+                        <section id="about">
+
+<h2 class="title">
+👤 درباره ما
+</h2>
+
+<p style="text-align:center;font-size:20px">
+
+سلام پلیر گرامی ما یک سرور ماینکرفت بدراک داری با نام فایر بال لند اگر دوست  دار یتو
+ سرور ما بدرخشی و گیم پلی عالی رو تجربه کنی پس برو پایین و   به روبیکا ما پیام بده و رنک بخر
+ تیم پشتیبانی فایر بال لند
+
+</p>
+
+</section>
 
 
 
+<section id="gallery">
+
+<h2 class="title">
+رنک های فروشی سرور
+</h2>
 
 
-<div class="footer">
+<div class="gallery">
 
-© 2026 Fire ball land
-
+<div>
+a
 </div>
 
 
+<div>
+b
+</div>
+
+
+<div>
+c
+</div>
+
+
+<div>
+d
+</div>
 
 
 </div>
 
+</section>
 
 
+
+<section id="support" class="contact">
+
+
+<h2 class="title">
+🛠 پشتیبانی
+</h2>
+
+
+<p>
+برای ارتباط با تیم پشتیبانی Fire ball land روی دکمه زیر کلیک کنید.
+</p>
+
+
+<a class="btn"
+href="https://rubika.ir/nazaninmlv"
+target="_blank">
+
+ورود به پشتیبانی روبیکا
+
+</a>
+
+
+</section>
+
+
+
+<footer>
+
+© 2026 Fire ball land | تمامی حقوق محفوظ است
+
+</footer>
 
 
 
 <script>
 
 
+function dark(){
 
-function copyIP(){
-
-navigator.clipboard.writeText("185.26.33.12");
-
-document.getElementById("msg").innerHTML="✅ IP کپی شد";
+document.body.classList.toggle("light");
 
 }
-
-
-
-
-
-async function checkServer(){
-
-
-let status=document.getElementById("status");
-
-
-try{
-
-
-let response =
-await fetch("https://api.mcsrvstat.us/bedrock/185.26.33.12");
-
-let data =
-await response.json();
-
-
-
-if(data.online){
-
-
-status.innerHTML=
-"🟢 سرور آنلاین است | بازیکن آنلاین: "
-+ data.players.online;
-
-
-status.style.color="#00ff88";
-
-
-}
-
-else{
-
-
-status.innerHTML=
-"🔴 سرور آفلاین است";
-
-status.style.color="#ff3333";
-
-
-}
-
-
-
-}
-
-catch{
-
-
-status.innerHTML=
-"🟢 سرور روشن است."; 
-
-
-}
-
-
-}
-
-
-
-checkServer();
-
 
 
 </script>
 
 
-
 </body>
 
-</html> 
+</html>

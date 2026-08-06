@@ -8,7 +8,7 @@
 <title>Fire Ball Land | Minecraft Server</title>
 
 <style>
-
+ 
 *{
     margin:0;
     padding:0;

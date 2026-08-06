@@ -1,3 +1,4 @@
+
 <html lang="fa" dir="rtl">
 
 <head>
@@ -5,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nova Land</title>
+<title>Fire Ball Land</title>
 
 <style>
 
@@ -17,18 +18,18 @@ scroll-behavior:smooth;
 body{
 margin:0;
 font-family:tahoma;
-background:#111827;
+background:#0b0000;
 color:white;
-transition:.4s;
 }
 
 
 header{
-background:#0f172a;
+background:#180000;
 padding:20px;
 position:sticky;
 top:0;
-z-index:100;
+z-index:10;
+border-bottom:2px solid #ff0000;
 }
 
 
@@ -48,149 +49,171 @@ font-size:18px;
 
 
 nav a:hover{
-color:#38bdf8;
+color:#ff3333;
 }
 
 
+
 .hero{
+
 text-align:center;
 padding:100px 20px;
-background:linear-gradient(135deg,#ff6666,#ff0000);
+background:
+linear-gradient(
+135deg,
+#ff0000,
+#550000
+);
+
 }
 
 
 .hero h1{
+
 font-size:55px;
-animation:fade 2s;
+text-shadow:0 0 20px red;
+
 }
 
 
 .hero p{
-font-size:22px;
+
+font-size:24px;
+
 }
+
 
 
 .btn{
+
 display:inline-block;
-background:white;
-color:#111;
+background:#ff0000;
+color:white;
 padding:15px 35px;
 border-radius:30px;
 text-decoration:none;
-margin-top:20px;
+margin:15px;
+
 }
+
+
+.btn:hover{
+
+background:#990000;
+
+}
+
 
 
 section{
+
 padding:60px 10%;
+
 }
+
 
 
 .title{
+
 text-align:center;
 font-size:35px;
-margin-bottom:40px;
+color:#ff3333;
+
 }
+
 
 
 .cards{
+
 display:flex;
 gap:20px;
 justify-content:center;
 flex-wrap:wrap;
+
 }
+
 
 
 .card{
-background:#1f2937;
-padding:30px;
+
+background:#210000;
+border:1px solid red;
 width:280px;
+padding:30px;
 border-radius:20px;
 text-align:center;
 transition:.4s;
+
 }
+
 
 
 .card:hover{
+
 transform:translateY(-10px);
-background:#374151;
+box-shadow:0 0 20px red;
+
 }
 
 
-.gallery{
-display:flex;
-gap:20px;
-justify-content:center;
-flex-wrap:wrap;
-}
 
+.ip{
 
-.gallery div{
-width:200px;
-height:150px;
-background:#334155;
-border-radius:15px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:25px;
-}
-
-
-.contact{
-text-align:center;
-}
-
-
-button{
-padding:12px 25px;
-border:none;
+background:#150000;
+padding:25px;
 border-radius:20px;
-cursor:pointer;
+text-align:center;
+font-size:25px;
+border:2px solid red;
+
 }
+
+
+
+.rules li{
+
+margin:15px;
+font-size:18px;
+
+}
+
 
 
 footer{
-background:#020617;
-text-align:center;
+
+background:#050000;
 padding:25px;
+text-align:center;
+
 }
 
 
-@keyframes fade{
+
+.fire{
+
+animation:fire 1s infinite alternate;
+
+}
+
+
+
+@keyframes fire{
 
 from{
-opacity:0;
-transform:translateY(-30px);
+text-shadow:0 0 10px red;
 }
 
 to{
-opacity:1;
+text-shadow:0 0 30px orange;
 }
 
-}
-
-
-.light{
-background:#f1f5f9;
-color:#111;
-}
-
-
-.light header{
-background:white;
-}
-
-
-.light .card{
-background:white;
-color:#111;
 }
 
 
 </style>
 
 </head>
+
 
 
 <body>
@@ -202,40 +225,81 @@ color:#111;
 
 <a href="#home">🏠 خانه</a>
 
-<a href="#services">استف</a>
+<a href="#about">🔥 درباره سرور</a>
 
-<a href="#about">👤 درباره ما</a>
+<a href="#features">⭐ امکانات</a>
 
-<a href="#gallery">رنک فروشی</a>
+<a href="#rules">📜 قوانین</a>
 
 <a href="#support">🛠 پشتیبانی</a>
-
-<button onclick="dark()">🌙</button>
 
 </nav>
 
 </header>
 
 
+
+
 <section class="hero" id="home">
 
-<h1>Fire ball land</h1>
+
+<h1 class="fire">
+🔥 Fire Ball Land 🔥
+</h1>
+
 
 <p>
-به دنیای حرفه ای فایر بال لند خوش آمدید.
+به سرور حرفه‌ای فایر بال لند خوش آمدید
 </p>
 
-<a class="btn" href="#services">
-ip : 185.26.33.12
+
+<a class="btn" onclick="copyIP()">
+کپی IP سرور
 </a>
+
+
+<div class="ip">
+185.26.33.12
+</div>
+
 
 </section>
 
 
-<section id="services">
+
+
+
+<section id="about">
 
 <h2 class="title">
-staff استف
+🔥 درباره سرور
+</h2>
+
+
+<p style="text-align:center;font-size:20px">
+
+سلام، به سرور فایربال لند خوش امدید.
+
+سرور فایربال لند یک سرور خفن جالب و پر هیجان است، شما میتوانید در این سرور رولپلیی خفن را تجربه و بازی کنید.
+
+شما برای ورود باید ایپی سرور را کپی کرده و در بخش اد سرور ماینکرافت توی servers بزارید
+
+اگر دوست دارید از همه پلیر ها یک قدم جلو تر باشید میتوانید با خریدن رنک این کار رو انجام بدید
+
+</p>
+
+
+</section>
+
+
+
+
+
+<section id="features">
+
+
+<h2 class="title">
+⭐ امکانات سرور
 </h2>
 
 
@@ -243,27 +307,39 @@ staff استف
 
 
 <div class="card">
-<h2>Owner-اونر</h2>
+
+<h2>⚔️ گیم پلی</h2>
+
 <p>
-NazaninMLV
-Shadow
+تجربه‌ای هیجان‌انگیز برای بازیکنان
 </p>
+
 </div>
+
 
 
 <div class="card">
-<h2>Co-Owner-کو اونر</h2>
+
+<h2>🏆 رنک‌ها</h2>
+
 <p>
-itz mohammad
+سیستم رنک حرفه‌ای
 </p>
+
 </div>
+
+
 
 
 <div class="card">
-<h2>Dev-دولپر</h2>
+
+<h2>🛡 امنیت</h2>
+
 <p>
-zuri58
+محیط امن و مدیریت قوی
+دارای لاگین سرور دارای تیم استف کامل و با مدریت عالی
 </p>
+
 </div>
 
 
@@ -271,60 +347,39 @@ zuri58
 
 </section>
 
-                        <section id="about">
+
+
+
+
+<section id="rules">
+
 
 <h2 class="title">
-👤 درباره ما
-</h2>
-
-<p style="text-align:center;font-size:20px">
-
-سلام پلیر گرامی ما یک سرور ماینکرفت بدراک داری با نام فایر بال لند اگر دوست  دار یتو
- سرور ما بدرخشی و گیم پلی عالی رو تجربه کنی پس برو پایین و   به روبیکا ما پیام بده و رنک بخر
- تیم پشتیبانی فایر بال لند
-
-</p>
-
-</section>
-
-
-
-<section id="gallery">
-
-<h2 class="title">
-رنک های فروشی سرور
+📜 قوانین
 </h2>
 
 
-<div class="gallery">
+<ul class="rules">
 
-<div>
-a
-</div>
+<li>❌ استفاده از چیت ممنوع</li>
 
+<li>❌ توهین ممنوع</li>
 
-<div>
-b
-</div>
+<li>✅ احترام به بازیکنان الزامی است</li>
 
-
-<div>
-c
-</div>
+<li>✅ همکاری با تیم مدیریت</li>
 
 
-<div>
-d
-</div>
+</ul>
 
-
-</div>
 
 </section>
 
 
 
-<section id="support" class="contact">
+
+
+<section id="support">
 
 
 <h2 class="title">
@@ -332,41 +387,47 @@ d
 </h2>
 
 
-<p>
-برای ارتباط با تیم پشتیبانی Fire ball land روی دکمه زیر کلیک کنید.
+<p style="text-align:center">
+
+برای پشتیبانی با مدیریت سرور ارتباط بگیرید.
+
 </p>
 
 
 <a class="btn"
-href="https://rubika.ir/nazaninmlv"
+href="https://rubika.ir/joinc/FEJDCJHH0QJTHNRNIEWSUFWASQXQGYJS"
 target="_blank">
 
 ورود به پشتیبانی روبیکا
 
 </a>
+</center>
 
 
 </section>
 
 
 
+
+
 <footer>
 
-© 2026 Fire ball land | تمامی حقوق محفوظ است
+🔥 Fire Ball Land © 2026
 
 </footer>
 
 
 
+
 <script>
 
+function copyIP(){
 
-function dark(){
+navigator.clipboard.writeText("185.26.33.12");
 
-document.body.classList.toggle("light");
+alert("IP سرور کپی شد!");
 
 }
-
 
 </script>
 

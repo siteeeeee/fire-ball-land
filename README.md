@@ -5,152 +5,132 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Fire Ball  Land</title>
+<title>Fire Ball Land | Minecraft Server</title>
 
 <style>
 
 *{
-box-sizing:border-box;
-scroll-behavior:smooth;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
 body{
-margin:0;
-font-family:tahoma;
-background:#0b0000;
-color:white;
+    font-family:tahoma, Arial;
+    background:#080808;
+    color:white;
 }
 
+
+/* Header */
 
 header{
-background:#180000;
-padding:20px;
-position:sticky;
-top:0;
-z-index:10;
-border-bottom:2px solid #ff0000;
+    width:100%;
+    position:fixed;
+    top:0;
+    right:0;
+    background:rgba(0,0,0,0.85);
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:999;
+    border-bottom:2px solid #ff0000;
+    backdrop-filter:blur(10px);
 }
 
 
-nav{
-display:flex;
-justify-content:center;
-gap:25px;
-flex-wrap:wrap;
+.logo{
+    font-size:28px;
+    color:#ff2020;
+    font-weight:bold;
+    text-shadow:0 0 15px red;
 }
 
 
 nav a{
-color:white;
-text-decoration:none;
-font-size:18px;
+
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    font-size:17px;
+    transition:.3s;
+
 }
 
 
 nav a:hover{
-color:#ff3333;
+
+    color:red;
+    text-shadow:0 0 10px red;
+
 }
 
 
+/* Hero */
 
 .hero{
 
-text-align:center;
-padding:100px 20px;
-background:
-linear-gradient(
-135deg,
-#ff0000,
-#550000
-);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.7),
+    rgba(0,0,0,.9)
+    ),
+    url("https://wallpaperaccess.com/full/866877.jpg");
+
+    background-size:cover;
+    background-position:center;
 
 }
 
 
 .hero h1{
 
-font-size:55px;
-text-shadow:0 0 20px red;
+    font-size:70px;
+    color:#ff2020;
+    text-shadow:
+    0 0 10px red,
+    0 0 30px red;
+
+    animation:fire 2s infinite alternate;
 
 }
 
 
 .hero p{
 
-font-size:24px;
+    margin-top:20px;
+    font-size:22px;
+    max-width:700px;
+    line-height:2;
 
 }
 
 
+@keyframes fire{
 
-.btn{
+from{
 
-display:inline-block;
-background:#ff0000;
-color:white;
-padding:15px 35px;
-border-radius:30px;
-text-decoration:none;
-margin:15px;
+text-shadow:
+0 0 10px red;
 
 }
 
+to{
 
-.btn:hover{
-
-background:#990000;
-
-}
-
-
-
-section{
-
-padding:60px 10%;
+text-shadow:
+0 0 40px red,
+0 0 70px orange;
 
 }
-
-
-
-.title{
-
-text-align:center;
-font-size:35px;
-color:#ff3333;
-
-}
-
-
-
-.cards{
-
-display:flex;
-gap:20px;
-justify-content:center;
-flex-wrap:wrap;
-
-}
-
-
-
-.card{
-
-background:#210000;
-border:1px solid red;
-width:280px;
-padding:30px;
-border-radius:20px;
-text-align:center;
-transition:.4s;
-
-}
-
-
-
-.card:hover{
-
-transform:translateY(-10px);
-box-shadow:0 0 20px red;
 
 }
 
@@ -158,61 +138,264 @@ box-shadow:0 0 20px red;
 
 .ip{
 
-background:#150000;
-padding:25px;
-border-radius:20px;
-text-align:center;
-font-size:25px;
-border:2px solid red;
+    margin-top:25px;
+    background:#151515;
+    padding:18px 35px;
+    border-radius:15px;
+    border:2px solid red;
+    font-size:25px;
+    box-shadow:0 0 20px red;
 
 }
 
 
+
+.btn{
+
+    margin-top:30px;
+    padding:15px 45px;
+    background:red;
+    color:white;
+    text-decoration:none;
+    border-radius:15px;
+    font-size:20px;
+    transition:.3s;
+
+}
+
+
+.btn:hover{
+
+    background:#ff5555;
+    transform:scale(1.1);
+
+}
+
+
+/* Sections */
+
+section{
+
+    padding:80px 10%;
+
+}
+
+
+.title{
+
+    text-align:center;
+    color:#ff3030;
+    font-size:40px;
+    margin-bottom:40px;
+    text-shadow:0 0 15px red;
+
+}
+
+
+.cards{
+
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(230px,1fr));
+
+    gap:25px;
+
+}
+
+
+.card{
+
+    background:#151515;
+    padding:30px;
+    border-radius:20px;
+    border:1px solid #ff2020;
+    transition:.3s;
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 0 25px red;
+
+}
+
+
+.card h3{
+
+    color:#ff3030;
+    margin-bottom:15px;
+
+}
+
+
+.card p{
+
+    color:#ddd;
+    line-height:1.8;
+
+}
+
+/* Server Info */
+
+.server-box{
+
+    background:#151515;
+    padding:35px;
+    border-radius:20px;
+    border:2px solid red;
+    text-align:center;
+    box-shadow:0 0 20px rgba(255,0,0,.3);
+
+}
+
+
+.server-box h2{
+
+    color:#ff3030;
+    margin-bottom:20px;
+
+}
+
+
+.info{
+
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    margin-top:30px;
+
+}
+
+
+.info div{
+
+    background:#202020;
+    padding:20px;
+    border-radius:15px;
+
+}
+
+
+.info span{
+
+    display:block;
+    color:#ff3030;
+    font-size:25px;
+    margin-bottom:10px;
+
+}
+
+
+/* Ranks */
+
+.rank{
+
+    text-align:center;
+
+}
+
+
+.rank h3{
+
+    font-size:28px;
+
+}
+
+
+.owner{
+
+    color:#ff0000;
+
+}
+
+
+.admin{
+
+    color:#00aaff;
+
+}
+
+
+.legend{
+
+    color:#ffd700;
+
+}
+
+
+.vip{
+
+    color:#00ff66;
+
+}
+
+
+/* Rules */
 
 .rules li{
 
-margin:15px;
-font-size:18px;
+    list-style:none;
+    background:#171717;
+    padding:18px;
+    margin:12px;
+    border-radius:12px;
+    border-right:4px solid red;
 
 }
 
 
+/* Support */
+
+.support{
+
+    text-align:center;
+    background:#151515;
+    border-radius:20px;
+    padding:40px;
+    border:1px solid red;
+
+}
+
+
+/* Footer */
 
 footer{
 
-background:#050000;
-padding:25px;
-text-align:center;
+    background:#000;
+    padding:25px;
+    text-align:center;
+    border-top:2px solid red;
+    color:#aaa;
 
 }
 
 
+/* Mobile */
 
-.fire{
+@media(max-width:700px){
 
-animation:fire 1s infinite alternate;
+.hero h1{
+
+font-size:40px;
+
+}
+
+
+nav{
+
+display:none;
 
 }
 
 
-
-@keyframes fire{
-
-from{
-text-shadow:0 0 10px red;
 }
-
-to{
-text-shadow:0 0 30px orange;
-}
-
-}
-
 
 </style>
 
 </head>
-
 
 
 <body>
@@ -220,77 +403,56 @@ text-shadow:0 0 30px orange;
 
 <header>
 
+<div class="logo">
+🔥 Fire Ball Land
+</div>
+
+
 <nav>
 
-<a href="#home">🏠 خانه</a>
-
-<a href="#about">🔥 درباره سرور</a>
-
-<a href="#features">⭐ امکانات</a>
-
-<a href="#rules">📜 قوانین</a>
-
-<a href="#support">🛠 پشتیبانی</a>
+<a href="#home">خانه</a>
+<a href="#features">امکانات</a>
+<a href="#ranks">رنک‌ها</a>
+<a href="#rules">قوانین</a>
+<a href="#support">پشتیبانی</a>
 
 </nav>
 
+
 </header>
 
-
+<main>
 
 
 <section class="hero" id="home">
 
-
-<h1 class="fire">
+<h1>
 🔥 Fire Ball Land 🔥
 </h1>
 
 
 <p>
-به سرور حرفه‌ای فایر بال لند خوش آمدید
+به سرور حرفه‌ای ماینکرفت ما خوش آمدید.
+<br>
+تجربه‌ای جذاب، امکانات زیاد و جامعه‌ای دوستانه منتظر شماست.
 </p>
-
-
-<a class="btn" onclick="copyIP()">
-کپی IP سرور
-</a>
 
 
 <div class="ip">
+
+📡 IP :
+<br>
 185.26.33.12
+
 </div>
 
 
-</section>
-
-
-
-
-
-<section id="about">
-
-<h2 class="title">
-🔥 درباره سرور
-</h2>
-
-
-<p style="text-align:center;font-size:20px">
-
-سلام، به سرور فایربال لند خوش امدید.
-
-سرور فایربال لند یک سرور خفن جالب و پر هیجان است، شما میتوانید در این سرور رولپلیی خفن را تجربه و بازی کنید.
-
-شما برای ورود باید ایپی سرور را کپی کرده و در بخش اد سرور ماینکرافت توی servers بزارید
-
-اگر دوست دارید از همه پلیر ها یک قدم جلو تر باشید میتوانید با خریدن رنک این کار رو انجام بدید
-
-</p>
+<a class="btn" href="https://rubika.ir/fireball_land">
+    ورود به چنل روبیکا سرور
+</a>
 
 
 </section>
-
-
 
 
 
@@ -307,10 +469,12 @@ text-shadow:0 0 30px orange;
 
 <div class="card">
 
-<h2>⚔️ گیم پلی</h2>
+<h3>
+🎮 Rolplay
+</h3>
 
 <p>
-تجربه‌ای هیجان‌انگیز برای بازیکنان
+حالت بقا با تجربه‌ای جذاب و چالش‌های مختلف.
 </p>
 
 </div>
@@ -319,30 +483,203 @@ text-shadow:0 0 30px orange;
 
 <div class="card">
 
-<h2>🏆 رنک‌ها</h2>
+<h3>
+💰Money
+</h3>
 
 <p>
-سیستم رنک حرفه‌ای
+سیستم اقتصادی، خرید و فروش و کسب درآمد داخل بازی.
 </p>
 
 </div>
-
 
 
 
 <div class="card">
 
-<h2>🛡 امنیت</h2>
+<h3>
+👑 Rank
+</h3>
 
 <p>
-محیط امن و مدیریت قوی
-دارای لاگین سرور دارای تیم استف کامل و با مدریت عالی
+رنک‌های ویژه با امکانات متفاوت برای بازیکنان.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+🛒 Shop
+</h3>
+
+<p>
+فروشگاه حرفه‌ای برای خرید آیتم‌ها.
+</p>
+
+</div>
+
+
+ <div class="card">
+
+<h3>
+Administration
+</h3>
+
+<p>
+سیستم مدریت حرفه ای
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+🎉 Events
+</h3>
+
+<p>
+رویدادهای جذاب و مسابقات هفتگی.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Rank shop
+</h3>
+
+<p>
+رنک های فروشی متنوع و با قیمت اقتصادی, برای خرید رنک به چنل سرور مراجعه کنید.
+</p>
+
+</div>
+
+</div>
+
+
+</section>
+
+ <section>
+
+
+<h2 class="title">
+📡 اطلاعات سرور
+</h2>
+
+
+<div class="server-box">
+
+
+<h2>
+Fire Ball Land Server
+</h2>
+
+
+<div class="info">
+
+
+<div>
+
+<span>
+🌐
+</span>
+
+IP
+
+<br>
+
+185.26.33.12
+
+</div>
+
+
+<div>
+
+<span>
+🟢
+</span>
+
+آنلاین است.
+
+<br>
+
+Online
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<section id="ranks">
+
+
+<h2 class="title">
+👑 رنک‌های سرور
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card rank">
+
+<h3 class="owner">
+OWNER
+</h3>
+
+<p>
+NazaninMLV
+<br>
+Shadow
+</p>
+
+</div>
+
+
+
+<div class="card rank">
+
+<h3 class="admin">
+Co-Owner
+</h3>
+
+<p>
+itz mohamad
+</p>
+
+</div>
+
+
+
+<div class="card rank">
+
+<h3 class="legend">
+Dev
+</h3>
+
+<p>
+Zuru58
 </p>
 
 </div>
 
 
 </div>
+
 
 </section>
 
@@ -354,19 +691,31 @@ text-shadow:0 0 30px orange;
 
 
 <h2 class="title">
-📜 قوانین
+📜 قوانین سرور
 </h2>
 
 
 <ul class="rules">
 
-<li>❌ استفاده از چیت ممنوع</li>
 
-<li>❌ توهین ممنوع</li>
+<li>
+❌ استفاده از چیت ممنوع است.
+</li>
 
-<li>✅ احترام به بازیکنان الزامی است</li>
 
-<li>✅ همکاری با تیم مدیریت</li>
+<li>
+🤝 به بازیکنان و اعضای تیم احترام بگذارید.
+</li>
+
+
+<li>
+🚫 اسپم و تبلیغات بدون اجازه ممنوع است.
+</li>
+
+
+<li>
+⚖️ قوانین سرور را رعایت کنید.
+</li>
 
 
 </ul>
@@ -382,25 +731,29 @@ text-shadow:0 0 30px orange;
 
 
 <h2 class="title">
-🛠 پشتیبانی
+💬 پشتیبانی
 </h2>
 
 
-<p style="text-align:center">
+<div class="support">
 
-برای پشتیبانی با مدیریت سرور ارتباط بگیرید.
 
+<p>
+برای ارتباط با پشتیبانی سرور وارد روبیکا شوید:
 </p>
 
 
-<a class="btn"
-href="https://rubika.ir/joinc/FEJDCJHH0QJTHNRNIEWSUFWASQXQGYJS"
-target="_blank">
+<br>
 
-ورود به پشتیبانی روبیکا
+
+<a class="btn" href="https://rubika.ir/joinc/FEJDCJHH0QJTHNRNIEWSUFWASQXQGYJS">
+
+پشتیبانی روبیکا
 
 </a>
-</center>
+
+
+</div>
 
 
 </section>
@@ -408,27 +761,21 @@ target="_blank">
 
 
 
+</main>
+
+
+
 
 <footer>
 
-🔥 Fire Ball Land © 2026
+© 2026 Fire Ball Land
+
+<br>
+
+Mr-Mamad dev
 
 </footer>
 
-
-
-
-<script>
-
-function copyIP(){
-
-navigator.clipboard.writeText("185.26.33.12");
-
-alert("IP سرور کپی شد!");
-
-}
-
-</script>
 
 
 </body>

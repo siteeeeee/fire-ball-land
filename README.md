@@ -680,8 +680,9 @@ Online
 <section id="ranks">
 
 
-<h2 class="title3"
-👑 رنک‌های سرور
+<h2 class="title"
+
+ 👑 رنک‌های سرور
 </h2>
 
 
